@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "react-calendar-heatmap/dist/styles.css";
+
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+
+import GlobalStyles from "./styles/GlobalStyles";
+import Header from "./components/Header";
+import Profile from "./pages/Profile";
+import Repo from "./pages/Repo";
+import Footer from "./components/Footer";
+import Repositories from "./pages/Repositories";
+
+import { ThemeName, themes } from "./styles/themes";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [themeName, setThemeName] = useState<ThemeName>("light");
+	const currentTheme = themes[themeName];
+
+	const [search, setSearch] = useState("github");
+
+	return (
+		<ThemeProvider theme={currentTheme}>
+			<BrowserRouter>
+				<Header
+					themeName={themeName}
+					setThemeName={setThemeName}
+					search={search}
+					setSearch={setSearch}
+				/>
+
+				<Routes>
+					<Route path="/" element={<Profile search={search} />} />
+					<Route
+						path="/:username"
+						element={<Profile search={search} />}
+					/>
+					<Route path="/:username/:reponame" element={<Repo />} />
+					<Route
+						path="/repositories"
+						element={<Repositories search={search} />}
+					/>
+				</Routes>
+
+				<Footer />
+
+				<GlobalStyles />
+			</BrowserRouter>
+		</ThemeProvider>
+	);
 }
 
 export default App;

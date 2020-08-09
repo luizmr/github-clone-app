@@ -1,44 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="githubFinder" title="#githubFinder" src="./assets/github-clone.gif" width="600px"/>
+</h1>
 
-## Available Scripts
+## 💻 About project
 
-In the project directory, you can run:
+Personal project built using ReactJS and Typescript, which is a clone of Github profile page. You can search for every user in Github (github api using fetch) and access all the repos and profile data. Also, using ThemeProvider, you can alternate between light and dark mode.
 
-### `yarn start`
+Demo: githubclonelmr.netlify.app
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠 Technology
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### **Website**
 
-### `yarn test`
+-   **[HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)**
+-   **[CSS3](https://www.w3schools.com/css/)**
+-   **[Typescript](https://www.typescriptlang.org/)**
+-   **[ReactJs](https://pt-br.reactjs.org/)** : **[Styled-Components](https://styled-components.com/)**, **[React Icons](https://react-icons.github.io/react-icons/)**, **[react-router-dom](https://reactrouter.com/web/guides/quick-start)**, **[React Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)**.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### **Utilitaries**
 
-### `yarn build`
+-   Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
+-   API: **[Github API](https://api.github.com)**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Before you begin, you will need to have the following tool installed on your machine:
+[Git](https://git-scm.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In addition, it is good to have an editor to work with the code as **[VSCode](https://code.visualstudio.com/)**
 
-### `yarn eject`
+### Running the web application (Front End)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clone this repository
+$ git clone https://github.com/luizmr/github-clone-app.git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Access the project folder in the cmd/terminal
+$ cd github-clone-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Use the command below to install all dependencies
+$ npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Install http-server
+$ npx http-server
 
-## Learn More
+# Run the application on terminal
+$ npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# The server is now running at localhost:3000
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 License
+
+This project is under the MIT license.
+
+Made with ❤️ by Luiz Marcelo Rocha
