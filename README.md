@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="githubFinder" title="#githubFinder" src="./assets/github-clone.gif" width="600px"/>
+    <img alt="githubFinder" title="#githubFinder" src="./assets/github-clone.gif" width="800px"/>
 </h1>
 
 ## 💻 About project
