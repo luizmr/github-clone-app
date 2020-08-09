@@ -6,7 +6,7 @@
 
 Personal project built using ReactJS and Typescript, which is a clone of Github profile page. You can search for every user in Github (github api using fetch) and access all the repos and profile data. Also, using ThemeProvider, you can alternate between light and dark mode.
 
-Demo: githubclonelmr.netlify.app
+Demo: https://githubclonelmr.netlify.app/
 
 ## 🛠 Technology
 
